@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9df5, #b57aff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container,
+#yesMessage,
+#noReaction {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #c44be3;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  margin: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#yesBtn {
+  background: #ff66d9;
+  color: white;
+}
+
+#noBtn {
+  background: #b84aff;
+  color: white;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.yes-gif,
+.cry-gif {
+  width: 250px;
+  margin-top: 20px;
+}
+
+@keyframes heartFloat {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-200px); opacity: 0; }
+}
+
+.heart {
+  position: fixed;
+  bottom: 10px;
+  color: pink;
+  font-size: 30px;
+  animation: heartFloat 2s linear infinite;
+}
